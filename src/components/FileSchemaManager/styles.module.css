@@ -1,0 +1,19 @@
+.fileSchemaManager {
+  composes: fileSchemaManager from "../../views/main/styles.module.css";
+  border: 1px solid darkgrey;
+  label {
+    font-size: 75%;
+  }
+
+  select {
+    border:1px solid #ccc;
+    vertical-align:top;
+    height: 20px;
+    font-size: 10px;
+    margin-left: 3px;
+
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    }
+  }

@@ -1,0 +1,4 @@
+.fileViewer {
+  composes: fileViewer from "../../views/main/styles.module.css";
+  }
+
