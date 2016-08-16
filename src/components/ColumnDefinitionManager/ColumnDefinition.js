@@ -12,7 +12,7 @@ const style = {
   margin: '.5rem',
   backgroundColor: 'white',
   display: 'flex',
-  flexFlow:'column wrap',
+  flexFlow:'column',
   cursor: 'move'
 };
 
@@ -91,7 +91,7 @@ class ColumnDefinition extends React.Component {
             </select>
           </label>
           <label style={{"float":"right"}}>
-            Show in table
+            Show in Table
             <input type="checkbox" checked={columnDefinition.showInTable} onChange={this._handleShowInTableChange}/>
           </label>
         </div>

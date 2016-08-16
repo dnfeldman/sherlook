@@ -2,7 +2,7 @@ import React, { PropTypes as T } from 'react'
 
 import Header from 'components/Header/Header'
 import FileUploader from 'components/FileUploader/FileUploader'
-import FileSchemaManager from 'components/FileSchemaManager/FileSchemaManager'
+import ColumnDefinitionManager from 'components/ColumnDefinitionManager/ColumnDefinitionManager'
 import FileViewer from 'components/FileViewer/FileViewer'
 import Visualizer from 'components/Visualizer/Visualizer'
 import HTML5Backend from 'react-dnd-html5-backend';
@@ -64,7 +64,7 @@ class Container extends React.Component {
           <FileUploader handleFileUpload={this._handleFileUpload}/>
         </Header>
         <div className={styles.leftPanel}>
-          <FileSchemaManager columnDefinitions={this.state.columnDefinitions} onColumnDefinitionChange={this._onColumnDefinitionChange}/>
+          <ColumnDefinitionManager columnDefinitions={this.state.columnDefinitions} onColumnDefinitionChange={this._onColumnDefinitionChange}/>
         </div>
         <div className={styles.content}>
           <Visualizer selectedColumn={this.state.selectedColumn} columnSummary={this.state.columnSummary} handleSelectColumnEvent={this._onColumnSelect}/>

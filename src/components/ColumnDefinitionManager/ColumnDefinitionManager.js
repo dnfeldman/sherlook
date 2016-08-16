@@ -3,7 +3,7 @@ import styles from './styles.module.css'
 import classnames from 'classnames'
 import ColumnDefinition from './ColumnDefinition.js'
 
-export class FileSchemaManager extends React.Component {
+export class ColumnDefinitionManager extends React.Component {
 
   render() {
     const columnDefinitions = this.props.columnDefinitions.map((columnDefinition) => (
@@ -11,16 +11,16 @@ export class FileSchemaManager extends React.Component {
     ));
 
     return (
-      <div className={classnames(styles.fileSchemaManager)}>
+      <div className={classnames(styles.columnDefinitionManager)}>
         {columnDefinitions}
       </div>
     )
   }
 }
 
-FileSchemaManager.propTypes = {
+ColumnDefinitionManager.propTypes = {
   columnDefinitions: React.PropTypes.array,
   onColumnDefinitionChange: React.PropTypes.func.isRequired
 };
 
-export default FileSchemaManager
+export default ColumnDefinitionManager
